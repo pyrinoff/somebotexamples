@@ -1,0 +1,15 @@
+tg.token=YOUR_BOT_TOKEN
+tg.botname=YOUR_BOT_NAME
+
+database.enabled=true
+database.url=jdbc:mysql://mysqlhost:10101/example1?createDatabaseIfNotExist=true&useSSL=false&useUnicode=true&serverTimezone=Europe/Moscow&characterEncoding=utf-8&allowPublicKeyRetrieval=true
+database.username=YOUR_DB_USERNAME
+database.password=YOUR_DB_PASSWORD
+database.hbm2ddl_auto=update
+database.driver=com.mysql.cj.jdbc.Driver
+database.dialect=org.hibernate.dialect.MySQLDialect
+database.show_sql=false
+database.format_sql=true
+database.cache.use_second_level_cache=false
+database.cache.use_query_cache=false
+database.cache.use_minimal_puts=false

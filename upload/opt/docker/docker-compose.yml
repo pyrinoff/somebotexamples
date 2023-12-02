@@ -1,0 +1,58 @@
+version: '3'
+
+services:
+  mysqlservice:
+    image: mysql:8
+    container_name: mysqlContainer
+    ports:
+      - ${PORT_MYSQL}:3306
+    env_file:
+      - .env
+    environment:
+      - MYSQL_ROOT_PASSWORD:${MYSQL_ROOT_PASSWORD}
+      - MYSQL_ALLOW_EMPTY_PASSWORD:${MYSQL_ALLOW_EMPTY_PASSWORD}
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+      #- ./mysql_config:/etc/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 5s
+      retries: 10
+    restart: always
+    command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
+
+  phpmyadminservice:
+    image: phpmyadmin/phpmyadmin
+    container_name: pmaContainer
+    links:
+      - mysqlservice:db
+    ports:
+      - ${PORT_PHPMYADMIN}:80
+    env_file:
+      - .env
+    restart: always
+    environment:
+      PMA_HOST: mysqlservice
+      PMA_PORT: 3306
+    depends_on:
+      mysqlservice:
+        condition: service_healthy
+
+  javaservice:
+    image: openjdk:17
+    container_name: javaContainer
+    volumes:
+      - ./javaservice/bot:/bot
+    build:
+      context: javaservice
+    env_file:
+      - .env2
+    depends_on:
+      mysqlservice:
+        condition: service_healthy
+    working_dir: /bot
+    command: ['bash', '/bot/bin/example1']
+
+networks:
+  default:
+        
