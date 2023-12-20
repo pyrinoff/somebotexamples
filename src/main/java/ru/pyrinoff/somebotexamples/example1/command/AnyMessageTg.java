@@ -2,8 +2,8 @@ package ru.pyrinoff.somebotexamples.example1.command;
 
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.objects.Update;
-import ru.pyrinoff.somebot.command.condition.MultiRuleset;
-import ru.pyrinoff.somebot.service.bot.tg.condition.concrete.HasMessageTg;
+import com.github.pyrinoff.somebot.command.condition.MultiRuleset;
+import com.github.pyrinoff.somebot.service.bot.tg.condition.concrete.HasMessageTg;
 import ru.pyrinoff.somebotexamples.example1.abstracts.CustomTgCommand;
 import ru.pyrinoff.somebotexamples.example1.command.priority.CommandPriority;
 import ru.pyrinoff.somebotexamples.example1.model.CustomTgMessage;

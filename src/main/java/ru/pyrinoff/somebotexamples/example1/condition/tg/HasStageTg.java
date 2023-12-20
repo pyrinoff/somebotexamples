@@ -1,6 +1,6 @@
 package ru.pyrinoff.somebotexamples.example1.condition.tg;
 
-import ru.pyrinoff.somebot.service.bot.tg.condition.AbstractTgCondition;
+import com.github.pyrinoff.somebot.service.bot.tg.condition.AbstractTgCondition;
 import ru.pyrinoff.somebotexamples.example1.model.CustomTgMessage;
 
 import java.util.Arrays;

@@ -4,8 +4,8 @@ import com.vk.api.sdk.objects.callback.MessageObject;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
-import ru.pyrinoff.somebot.abstraction.AbstractCommand;
-import ru.pyrinoff.somebot.service.bot.vk.VkBot;
+import com.github.pyrinoff.somebot.abstraction.AbstractCommand;
+import com.github.pyrinoff.somebot.service.bot.vk.VkBot;
 import ru.pyrinoff.somebotexamples.example1.model.CustomVkMessage;
 import ru.pyrinoff.somebotexamples.example1.model.User;
 

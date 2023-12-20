@@ -5,7 +5,7 @@ import lombok.Setter;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.telegram.telegrambots.meta.api.objects.Update;
-import ru.pyrinoff.somebot.service.bot.tg.TgMessage;
+import com.github.pyrinoff.somebot.service.bot.tg.TgMessage;
 
 @Getter
 public class CustomTgMessage extends TgMessage {

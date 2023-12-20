@@ -3,7 +3,7 @@ package ru.pyrinoff.somebotexamples.example1.command;
 import com.vk.api.sdk.objects.callback.MessageObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import ru.pyrinoff.somebot.command.condition.MultiRuleset;
+import com.github.pyrinoff.somebot.command.condition.MultiRuleset;
 import ru.pyrinoff.somebotexamples.example1.abstracts.CustomVkCommand;
 import ru.pyrinoff.somebotexamples.example1.api.service.IUserService;
 import ru.pyrinoff.somebotexamples.example1.command.priority.CommandPriority;

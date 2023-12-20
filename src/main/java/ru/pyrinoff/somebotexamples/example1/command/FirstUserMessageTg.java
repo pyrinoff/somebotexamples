@@ -3,7 +3,7 @@ package ru.pyrinoff.somebotexamples.example1.command;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.objects.Update;
-import ru.pyrinoff.somebot.command.condition.MultiRuleset;
+import com.github.pyrinoff.somebot.command.condition.MultiRuleset;
 import ru.pyrinoff.somebotexamples.example1.abstracts.CustomTgCommand;
 import ru.pyrinoff.somebotexamples.example1.api.service.IUserService;
 import ru.pyrinoff.somebotexamples.example1.command.priority.CommandPriority;

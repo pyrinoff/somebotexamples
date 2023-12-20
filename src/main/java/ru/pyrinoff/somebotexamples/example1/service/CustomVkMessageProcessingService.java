@@ -4,7 +4,7 @@ import com.vk.api.sdk.objects.callback.MessageObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
-import ru.pyrinoff.somebot.service.bot.vk.VkMessageProcessingService;
+import com.github.pyrinoff.somebot.service.bot.vk.VkMessageProcessingService;
 import ru.pyrinoff.somebotexamples.example1.api.service.IUserService;
 import ru.pyrinoff.somebotexamples.example1.model.CustomVkMessage;
 import ru.pyrinoff.somebotexamples.example1.model.User;

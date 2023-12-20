@@ -1,6 +1,6 @@
 package ru.pyrinoff.somebotexamples.example1;
 
-import ru.pyrinoff.somebot.Somebot;
+import com.github.pyrinoff.somebot.Somebot;
 
 public class Main {
 

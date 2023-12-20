@@ -2,10 +2,10 @@ package ru.pyrinoff.somebotexamples.example2.command;
 
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.objects.Update;
-import ru.pyrinoff.somebot.command.condition.MultiRuleset;
-import ru.pyrinoff.somebot.service.bot.tg.AbstractCommandTgMessage;
-import ru.pyrinoff.somebot.service.bot.tg.TgMessage;
-import ru.pyrinoff.somebot.service.bot.tg.condition.concrete.HasTextEqualsTg;
+import com.github.pyrinoff.somebot.command.condition.MultiRuleset;
+import com.github.pyrinoff.somebot.service.bot.tg.AbstractCommandTgMessage;
+import com.github.pyrinoff.somebot.service.bot.tg.TgMessage;
+import com.github.pyrinoff.somebot.service.bot.tg.condition.concrete.HasTextEqualsTg;
 
 import java.util.ArrayList;
 

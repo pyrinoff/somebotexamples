@@ -4,7 +4,7 @@ import com.vk.api.sdk.objects.callback.MessageObject;
 import lombok.Getter;
 import lombok.Setter;
 import org.jetbrains.annotations.Nullable;
-import ru.pyrinoff.somebot.service.bot.vk.VkMessage;
+import com.github.pyrinoff.somebot.service.bot.vk.VkMessage;
 
 @Getter
 public class CustomVkMessage extends VkMessage {

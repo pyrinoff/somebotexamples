@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.objects.Update;
-import ru.pyrinoff.somebot.service.bot.tg.TgMessageProcessingService;
+import com.github.pyrinoff.somebot.service.bot.tg.TgMessageProcessingService;
 import ru.pyrinoff.somebotexamples.example1.api.service.IUserService;
 import ru.pyrinoff.somebotexamples.example1.model.CustomTgMessage;
 import ru.pyrinoff.somebotexamples.example1.model.User;

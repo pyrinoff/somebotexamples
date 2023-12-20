@@ -1,7 +1,7 @@
 package ru.pyrinoff.somebotexamples.example1.condition.tg;
 
 import org.telegram.telegrambots.meta.api.objects.Update;
-import ru.pyrinoff.somebot.api.condition.IConcreteCondition;
+import com.github.pyrinoff.somebot.api.condition.IConcreteCondition;
 import ru.pyrinoff.somebotexamples.example1.model.CustomTgMessage;
 
 public class FirstMessageFromUserTg implements IConcreteCondition<Update, CustomTgMessage> {
