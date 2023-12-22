@@ -30,7 +30,7 @@ jar { manifest { attributes("Main-Class": "${theMainClass}") } } ////https://www
 
 dependencies {
     implementation(
-            'com.github.pyrinoff:somebot:0.2.4',
+            'com.github.pyrinoff:somebot:0.2-SNAPSHOT',
             'org.springframework.boot:spring-boot-starter-data-jpa:3.1.0',
             'org.telegram:telegrambots:6.7.0',
             'com.github.pyrinoff:vk-java-sdk:7fdcb839e4', //'com.vk.api:sdk:1.0.14'
