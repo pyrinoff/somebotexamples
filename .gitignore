@@ -2,6 +2,7 @@
 src/main/resources/application.properties
 upload/opt/docker/javaservice/bot/*
 upload/opt/docker/.env2
+/src/main/resources/files/
 
 #Common
 .idea/
@@ -47,5 +48,4 @@ bin/
 
 ### Mac OS ###
 .DS_Store
-/src/main/resources/files/
 

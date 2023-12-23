@@ -1,6 +1,35 @@
-tg.token=YOUR_BOT_TOKEN_CAN_BE_HERE
-tg.botname=YOUR_BOT_NAME_CAN_BE_HERE
-database.url=jdbc:mysql://mysqlservice:3306/example1?createDatabaseIfNotExist=true&useSSL=false&useUnicode=true&serverTimezone=Europe/Moscow&characterEncoding=utf-8&allowPublicKeyRetrieval=true
-database.username=root
-database.password=DFdf4512AAZZss
-database.hbm2ddl_auto=update
+tg.enabled=true
+tg.token=111222333:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+tg.botname=Somebot
+
+vk.enabled=true
+vk.groupid=GROUP_ID_FOR_EXAMPLE_1234566789
+vk.grouptoken=GROUP_TOKEN
+vk.adminid=ADMIN_ID_FOR_EXAMPLE_123456789
+vk.admintoken=ADMIN_TOKEN
+#for token generation
+vk.appid=7883306
+
+#IN-MEMORY SQL
+database.url=jdbc:hsqldb:mem:tm
+database.driver=org.hsqldb.jdbcDriver
+database.dialect=org.hibernate.dialect.HSQLDialect
+database.username=sa
+database.password=
+
+#SQL   #/opt/docker4 (only mysql+phpmyadmin)
+#database.url=jdbc:mysql://mesql:10101/somedatabase?createDatabaseIfNotExist=true&useSSL=false&useUnicode=true&serverTimezone=Europe/Moscow&characterEncoding=utf-8&allowPublicKeyRetrieval=true
+#database.driver=com.mysql.jdbc.Driver
+#database.dialect=org.hibernate.dialect.MySQLDialect
+#database.username=SOMEUSER
+#database.password=SOMEPASSWORD
+
+#COMMON SQL
+database.hbm2ddl_auto=create
+database.show_sql=false
+database.format_sql=true
+database.cache.use_second_level_cache=false
+database.cache.use_query_cache=false
+database.cache.use_minimal_puts=false
+#database.cache.region_prefix=tm
+#database.cache.region.factory_class=com.hazelcast.hibernate.HazelcastCacheRegionFactory

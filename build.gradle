@@ -30,12 +30,13 @@ jar { manifest { attributes("Main-Class": "${theMainClass}") } } ////https://www
 
 dependencies {
     implementation(
-            'com.github.pyrinoff:somebot:0.2-SNAPSHOT',
+            'com.github.pyrinoff:somebot:0.2.5',
             'org.springframework.boot:spring-boot-starter-data-jpa:3.1.0',
             'org.telegram:telegrambots:6.7.0',
             'com.github.pyrinoff:vk-java-sdk:7fdcb839e4', //'com.vk.api:sdk:1.0.14'
             'org.jetbrains:annotations:24.0.1',
             'org.slf4j:slf4j-simple:2.0.5',
+            'org.hsqldb:hsqldb:2.7.1'
     )
     runtimeOnly 'mysql:mysql-connector-java:8.0.33'
     compileOnly 'org.projectlombok:lombok:1.18.26'

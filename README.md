@@ -1,8 +1,7 @@
-# SOMEBOT EXAMPLE 1
+# SOMEBOT EXAMPLE #1
 
-Примеры кода и деплоя.
-Example1 - пример кода посложнее - показано, как переопределить сущность пользователя и не только.
-Example2 - простой бот.
+Пример бота (код и деплой) на библиотеке somebot. 
+В папках customization - пример переопределения сообщений, можно безболезненно удалить.
 
 ## НАСТРОЙКА
 * __Если не используем docker-compose и/или не хотим передавать параметры в командной строке__ - копируем содержимое application.properties.example в файл application.properties и правим его:
@@ -14,13 +13,13 @@ cp src/main/resources/application.properties.example src/main/resources/applicat
 cp upload/opt/docker/.env2.example upload/opt/docker/.env2
 ```
 
+В обоих случаях особое внимание уделяем пунктам настройки БД - если она не нужна, используем блок In-memory.
+
 ## КОМПИЛЯЦИЯ
 
 ```
 ./gradlew clean build
 ```
-
-Т.к. зашито сразу 2 примера, я использую переменную activatedExample для выбора класса, который будет запускаться. 
 
 ## ИСПОЛЬЗОВАНИЕ
 ```
